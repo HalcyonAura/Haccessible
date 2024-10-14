@@ -178,7 +178,7 @@ section {
 }
 
 h3 {
-  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .organizerGroups {
   margin-left: auto;
@@ -192,7 +192,7 @@ h3 {
 }
 
 .organizerGroups > img {
-    background: tomato;
+    background: #FFFC89;
     padding: 5px;
     max-height: 5rem;
    
