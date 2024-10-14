@@ -177,6 +177,9 @@ section {
     margin: 1rem auto 1rem auto;
 }
 
+h3 {
+  padding-top: 1rem;
+}
 .organizerGroups {
   margin-left: auto;
   margin-right: auto;
