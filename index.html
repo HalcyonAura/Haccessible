@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Haccessible</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-    <script src="./scripts.js"></script>
   </head>
   <body>
     <a href="https://mlh.io/na?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2023-season&amp;utm_content=white" target="_blank" class="astro-LP7QSMJT" id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"><img alt="Major League Hacking 2023 Hackathon Season" class="astro-LP7QSMJT" src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" style="width:100%"></a>
-    <header onClick="onBurgerOpen()">
+    <header>
       <div id="burger-menu">
         <span></span>
       </div>
-      <p id="headerTitle">Haccessible</p>
-      <div id="blank" style="width: 4rem"></div>
+      <h1 id="headerTitle">Haccessible</h1>
+      <div id="blank" style="width: 2rem"></div>
       <nav id="menu">
         <a href="#info">Info</a>
         <a href="#faq">FAQ</a>
+        <a href="#mentors">Mentors</a>
+        <a href="#speakers">Speakers</a>
         <a href="#sponsors">Sponsors</a>
         <a href="#organizers">Organizers</a>
       </nav>
@@ -33,59 +34,134 @@
       </section>
       <section>
         <span class="anchor" id="info"></span>
-        <h2>Info</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Info</h2>
+        <p>This is a template accessible hackathon event website. Hackathons are often open to all skill levels, background, experiences, genders, and more. That said, we could talk more about having proactive design rather than reactive design, particularly as an a11y.</p>
+      </section>
+
+        <section class="accordion">
+          <span class="anchor" id="faq"></span>
+          <h2>FAQs</h2>
+
+          <div class="accordion-container" >
+            <div class="accordion-item">
+              <button class="accordion-trigger" id="accordion-trigger-1" aria-expanded="false" aria-controls="accordion-content-1">
+                <span class="accordion-title">
+                  What is a hackathon?
+                </span>
+                <span class="accordion-icon">
+                  &plus;
+                </span>
+              </button>
+              <div class="accordion-content" id="accordion-content-1" role="region" aria-labelledby="accordion-trigger-1">
+                <p>A time-constrained project-development event. Have an idea? Bring it to fruition. Want to learn something new? Attend a workshop, join a team, or hack solo! Want free stuff? Just show up!</p>
+              </div>
+            </div>
+      
+            <div class="accordion-item">
+              <button class="accordion-trigger" id="accordion-trigger-2" aria-expanded="false" aria-controls="accordion-content-2">
+                <span class="accordion-title">
+                  Why should I attend a hackathon?
+                </span>
+                <span class="accordion-icon">
+                  &plus;
+                </span>
+              </button>
+              <div class="accordion-content" id="accordion-content-2" role="region" aria-labelledby="accordion-trigger-3">
+                <p>It can help you decide you might want to do for a job (i.e. program or not), try out different technologies, or even develop a project for your resume.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" id="accordion-trigger-3" aria-expanded="false" aria-controls="accordion-content-3">
+                <span class="accordion-title">
+                  What else can I do at a hackathon?
+                </span>
+                <span class="accordion-icon">
+                  &plus;
+                </span>
+              </button>
+              <div class="accordion-content" id="accordion-content-3" role="region" aria-labelledby="accordion-trigger-3">
+                <p>You can volunteer, mentor, speak, sponsor, and/or judge.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <span class="anchor" id="mentors"></span>
+          <h2>Mentors</h2>
+            <p>Mentors are sometimes hackers, sometimes community members, but always full of knowledge and willing to help hackers debug their projects. Mentors can be more than just technical help, project managers and folks who focus on other business aspects are great for ideation and scope advice. Even more, they can simulate a possible client interaction making hackers have to learn how to communicate their ideas to different experience levels.</p>
+        </section>
+        <section>
+          <span class="anchor" id="speakers"></span>
+          <h2>Speakers</h2>
+            <p>Speakers are workshop hosts and can give hackers (and other attendees) an hour long tutorial on a possible starter project, expose people to new technologies and their nuances, and talk more about their field or company and what to expect. Workshops can be breaks for hackers, offer chances to find an expert in a topic, and/or provide new connections!</p>
         </section>
       <section>
-        <span class="anchor" id="faq"></span>
-        <h2 class="accordion">FAQs</h1>
-        <ol>
-          <li><button>Lorem ipsum dolor sit amet, consectetur adipiscing elit</button></li>
-          <li><button>Lorem ipsum dolor sit amet, consectetur adipiscing elit</button></li>
-          <li><button>Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="expander down"></span></button>
-            <p class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></li>
-        </ol>
-      </section>
-      <section>
         <span class="anchor" id="sponsors"></span>
-        <h2 id="sponsors">Sponsors</h1>
-        <div class="sponsor" id="toptier"></div>
+        <h2>Sponsors</h2>
+        <div class="sponsor" id="toptier">
+          <p>Sponsors give differing amounts of money which allows them certain "features" at a hackathon. Such as the biggest logo for the biggest contribution, and maybe some keynote time!</p>
+        </div>
         <div class="sponsor" id="secondtier"></div>
-        <div class="sponsor" id="thirdtier"></div>
+        <p>Sponsors who give a little less might get to give a workshop and host a prize category that they'll judge themselves.</p>
+        <div class="sponsor" id="thirdtier">
+          <p>Sponsors who give a lower amount are still wonderful to have, they'll at least be on the t-shirt if they sponsored in time, and may send mentors or recruiters for only the first day.</p>
+        </div>
       </section>
       <section>
         <span class="anchor" id="organizers"></span>
-        <h2 id="organizers">Organizers</h1>
-        <div class="organizerGroup">
+        <h2>Organizers</h2>
+        <div class="organizerGroups">
           <img src="./images/organizer_C.jpg" alt="woman biting laptop"/>
           <img src="./images/organizerA.jpg" alt="jeremy the left facing snail"/>
           <img src="./images/organizerB.png" alt="woman throwing spaghetti in a forest"/>
-        </div>
-
-        <div class="organizerGroup">
           <img src="./images/organizerC.png" alt="box of donut holes branded as Tim Hortons timbits"/>
-        <img src="./images/organizerD.png" alt="Apple Macintosh II"/>
-        <img src="./images/organizerE.jpg" alt="woman with hoops and afro held up by a bandana in black and white"/>
-        </div>
-        
-        <div class="organizerGroup">
+          <img src="./images/organizerD.png" alt="Apple Macintosh II"/>
+          <img src="./images/organizerE.jpg" alt="woman with hoops and afro held up by a bandana in black and white"/>
           <img src="./images/organizerF.jpg" alt="sculpture of a man with a curly beard"/>
-        <img src="./images/organizerG.jpg" alt="astronaut suit with black starry background"/>
-        <img src="./images/organizerH.jpg" alt="gir the green puppet dog from Invader Zim"/>
-
-        </div>
-
-        <div class="organizerGroup">
+          <img src="./images/organizerG.jpg" alt="astronaut suit with black starry background"/>
+          <img src="./images/organizerH.jpg" alt="gir the green puppet dog from Invader Zim"/>
           <img src="./images/organizerI.jpg" alt="A man covered in metal armor and a green hooded cape with fur detailing, also known as comic book villain, Doctor DOOM"/>
+
         </div>
       </section>
     </main>
     <footer>
-      <img/> <!--FB-->
-      <img/> <!--Insta-->
-      <img/> <!--Twitter-->
       <p>made with ♥ from GHW</p>
     </footer>
+    <script>
+      var burgerMenu = document.getElementById('burger-menu');
+    var overlay = document.getElementById('menu');
+    burgerMenu.addEventListener('click',function(){
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+    });
+    </script>
+    <script>
+      const accordionItems = document.querySelectorAll(".accordion-item");
+  
+      const toggleAccordion = (index) => {
+        const currentAccordion = accordionItems[index];
+        currentAccordion.classList.toggle("is-active");
+      
+        const accordionContent = currentAccordion.querySelector(".accordion-content");
+        const accordionTrigger = currentAccordion.querySelector(".accordion-trigger");
+      
+        if (currentAccordion.classList.contains("is-active")) {
+          accordionContent.style.height = `${accordionContent.scrollHeight}px`;
+          accordionTrigger.setAttribute("aria-expanded", "true");
+        } else {
+          accordionContent.style.height = 0;
+          accordionTrigger.setAttribute("aria-expanded", "false");
+        }
+      };
+      
+      window.addEventListener("load", () => {
+        accordionItems.forEach((accordion, index) => {
+          const accordionTrigger = accordion.querySelector(".accordion-trigger");
+          accordionTrigger.addEventListener("click", () => toggleAccordion(index));
+        });
+      });
+    </script>
   </body>
   
 </html>
